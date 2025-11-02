@@ -38,7 +38,7 @@ function App() {
         <WelcomeMessage />
       </div>
       <div>
-        <Header/>
+        <Header />
       </div>
         
       <div>
