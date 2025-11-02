@@ -42,11 +42,11 @@ function App() {
       </div>
         
       <div>
-        <MainContent/>
+        <MainContent />
       </div>
 
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   )
