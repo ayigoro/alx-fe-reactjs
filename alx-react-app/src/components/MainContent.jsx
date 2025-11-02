@@ -1,7 +1,7 @@
-function Main (){
+function Main(){
   return(
     <p>I love to visit New York, Paris, and Tokyo.</p>
   )
 }
 
-export default MainContent
+export default Main
