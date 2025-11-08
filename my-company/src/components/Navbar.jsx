@@ -7,7 +7,7 @@ import Services from "./Services";
 
 const Navbar = () => {
   return (
-    <nav className="navbar" style={{display :'flex', justifyContent:'space-around', gap :'20px'}}>
+    <nav className="navbar" style={{display :'flex', justifyContent:'space-around', gap :'20px',backgroundColor:'blue'}}>
       <Link to = "/">Home</Link>
       <Link to = "/about">About</Link>
       <Link to = "/contact">Contact</Link>
