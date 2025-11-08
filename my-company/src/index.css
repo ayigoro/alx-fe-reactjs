@@ -1,0 +1,14 @@
+*,::after,::before{
+  margin: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+body{
+  text-align: center;
+}
+ .services ul li{
+  list-style-type:none;
+ }
