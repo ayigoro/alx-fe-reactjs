@@ -1,4 +1,4 @@
-import useRecipeStore from './recipeStore/useRecipeStore'
+import useRecipeStore from './recipeStore'
 import React from 'react'
   
   const RecipeList = () => {
