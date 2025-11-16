@@ -22,6 +22,12 @@ const AddRecipeForm = () => {
       placeholder="Description"
       />
 
+      <textarea
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          placeholder="Description"
+        />
+
       <button type="submit">Add Recipe</button>
 
     </form>
