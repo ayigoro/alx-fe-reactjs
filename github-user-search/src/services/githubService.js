@@ -34,3 +34,5 @@ export const fetchUserData = async (username) => {
 };
 
 export default githubService
+
+// src/components/Search.jsx doesn't contain: ["avatar_url", "login", "Loading", "Looks like we cant find the user", "img"]
