@@ -1,18 +1,36 @@
 import React from 'react'
+import axios from 'axios'
 
 
 
 
+const githubAPI = axios.create({
+  baseURL: "https://api.github.com",
+  headers: {
+    Accept: "application/vnd.github.v3+json",
+    Authorization: import.meta.env.VITE_APP_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
 
-const GITHUB_API_KEY = import.meta.env.VITE_APP_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
-const fetchRepo = async ()=> {
-  const response = await fetch ("https://api.github.com/user/repos", {
-    headers:{
-      Authorization : 'token ${GITHUB_API_KEY}',
-    },
-  })
-    return response.json()
-}
+      ? `token ${import.meta.env.VITE_APP_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
+}`
+      : undefined,
+  },
+});
 
+/**
+ * Fetch GitHub user data by username
+ * @param {string} username
+ * @returns {Promise<Object>}
+ */
+export const fetchUserData = async (username) => {
+  try {
+    const response = await githubAPI.get(`/users/${username}`);
+    return response.data;
+  } catch (error) {
+    if (error.response && error.response.status === 404) {
+      throw new Error("User not found");
+    }
+    throw new Error("Failed to fetch user data");
+  }
+};
 
-export default api
+export default githubService
